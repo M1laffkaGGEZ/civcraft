@@ -143,13 +143,13 @@ public class Mine extends Structure {
 		return this.getConsumeComponent().getLevel();
 	}
 	
-	public double getHammersPerTile() {
-		AttributeBiomeRadiusPerLevel attrBiome = (AttributeBiomeRadiusPerLevel)this.getComponent("AttributeBiomeRadiusPerLevel");
-		double base = 1.0;
+// 	public double getHammersPerTile() {
+// 		AttributeBiomeRadiusPerLevel attrBiome = (AttributeBiomeRadiusPerLevel)this.getComponent("AttributeBiomeRadiusPerLevel");
+// 		double base = 1.0;
 		
-		if (attrBiome != null) {
-			base = attrBiome.getBaseValue();
-		}
+// 		if (attrBiome != null) {
+// 			base = attrBiome.getBaseValue();
+// 		}
 	
 		double rate = 1;
 		rate += this.getTown().getBuffManager().getEffectiveDouble(Buff.ADVANCED_TOOLING);
